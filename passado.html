@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .estilo-1 {
+        margin: 10px;
+        padding: 10px;
+        background: black;
+        color: white;
+      }
+
+      .display-intermediario {
+        display: inline-block;
+      }
+
+      .coluna {
+        width: 50%;
+        float: left;
+        padding: 9px;
+        box-sizing: border-box;
+      }
+
+      .pull-left {
+        float: left;
+      }
+
+      .pull-right {
+        float: right;
+      }
+
+      .coluna-dp {
+        vertical-align: middle;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="estilo-1">
+      <div class="coluna-dp">
+        <img height="100" src="cepo-de-madeira.jpg">
+      </div>
+      <div class="coluna-dp">
+        <img height="200" src="cepo-de-madeira.jpg">
+      </div>
+    </div>
+
+    <table>
+      <tr>
+        <td width="50%">
+          <img width="100%" src="cepo-de-madeira.jpg">
+        </td>
+        <td width="50%">
+          <img width="100%" src="cepo-de-madeira.jpg">
+        </td>
+      </tr>
+    </table>
+
+    <div class="coluna">
+      <img height="100" src="cepo-de-madeira.jpg">
+    </div>
+
+    <div class="coluna">
+      <img height="200" src="cepo-de-madeira.jpg">
+    </div>
+
+    <div class="estilo-1">
+      <img class="pull-left" width="50" src="cepo-de-madeira.jpg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <div class="estilo-1">
+      <img class="pull-right" width="50" src="cepo-de-madeira.jpg">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </div>
+    <span class="estilo-1 display-intermediario">span</span>
+    <span class="estilo-1 display-intermediario">span</span>
+  </body>
+</html>

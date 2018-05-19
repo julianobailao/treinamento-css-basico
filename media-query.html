@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+      .bloco {
+        width: 250px;
+        height: 250px;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: red;
+      }
+
+      @media only screen and (min-width: 321px) {
+        .bloco {
+          background: green;
+        }
+      }
+
+      @media only screen and (min-width: 768px) {
+        .bloco {
+          width: 500px;
+          height: 500px;
+          background: blue;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bloco"></div>
+  </body>
+</html>

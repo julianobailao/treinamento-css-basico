@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #212121;
+      }
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+      }
+
+      .bloco {
+        width: 50px;
+        height: 50px;
+        background: pink;
+        color: white;
+      }
+
+      .translate {
+        transform: translateX(100px) translateY(100px);
+      }
+
+      .skew {
+        transform: skewX(10deg) skewY(-20deg);
+      }
+
+      .rotate {
+        transform: rotate(145deg);
+      }
+
+      .scale {
+        transform: scale(1.5);
+      }
+
+      .goku {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        overflow: hidden;
+        box-shadow: 0 0 5px red,
+          10px 10px 10px green,
+          20px 20px 20px blue;
+        transition: all .25s linear;
+      }
+
+      .goku img {
+        width: 100%;
+        transition: all .25s linear;
+      }
+
+      .goku:hover img {
+        transform: scale(2.4) rotate(350deg);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="bloco translate"></div>
+      <div class="bloco skew"></div>
+      <div class="bloco rotate"></div>
+      <div class="bloco scale"></div>
+    </div>
+
+    <a href="#" class="goku">
+      <img src="goku.jpg"/>
+    </a>
+  </body>
+</html>

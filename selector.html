@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .botao {
+        color: #fff;
+        padding: 10px;
+        font-size: 142px;
+        border-radius: 20px;
+        margin: 10px;
+        display: inline-block;
+        font-family: arial;
+        text-decoration: none;
+        box-shadow: 10px 10px 0 rgba(0,0,0,.1);
+        background: linear-gradient(90deg, black 0%, blue 50%, black 100%);
+        background-size: 200%;
+        background-position: left top;
+        transition: all .25s linear;
+      }
+
+      .botao:hover {
+        background-position: right top;
+      }
+
+      .botao:active {
+        box-shadow: 5px 5px 0 red,
+          inset 10px 10px 10px blue;
+      }
+
+      .botao:visited {
+        color: red;
+      }
+
+      .texto {
+        background: white;
+        border: solid 10px red;
+        padding: 100px;
+        font-size: 32px;
+      }
+
+      .texto:focus {
+        border-color: blue;
+      }
+
+      .texto:focus ~ p {
+        color: red;
+      }
+
+      p {
+        position: relative;
+        font-size: 100px;
+      }
+
+      p::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 200px;
+        height: 10px;
+        background: red;
+      }
+
+      p::after {
+        content: '----';
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <a href="#" class="botao">Teste</a>
+    <input class="texto" type="text">
+    <div>teste</div>
+    <p>teste</p>
+  </body>
+</html>

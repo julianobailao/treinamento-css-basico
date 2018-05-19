@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+      }
+
+      .flex-row img {
+        width: 100px;
+      }
+
+      .flex-row img:first-child {
+        height: 350px;
+      }
+
+      .flex-row img:last-child {
+        height: 350px;
+      }
+
+      .flex-row img:nth-child(3) {
+        height: 450px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-row">
+      <img src="cepo-de-madeira.jpg">
+      <img src="cepo-de-madeira.jpg">
+      <img src="cepo-de-madeira.jpg">
+      <img src="cepo-de-madeira.jpg">
+      <img src="cepo-de-madeira.jpg">
+      <img src="cepo-de-madeira.jpg">
+    </div>
+  </body>
+</html>
